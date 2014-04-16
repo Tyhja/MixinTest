@@ -1,4 +1,3 @@
-
 using System; 
 using System.Linq; 
 using System.Reflection; 
@@ -90,6 +89,7 @@ public class StreetAddress : Address
  public static StreetAddress NewObject (int zipCode, string city, string street, string 
 streetNumber) 
  { 
+
  return ObjectFactory.Create<StreetAddress> (true, ParamList.Create (zipCode, city, street, 
 streetNumber)); 
  } 

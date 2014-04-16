@@ -11,6 +11,9 @@ public class MixinMono : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
+		Debug.Log(AppDomain.CurrentDomain.BaseDirectory);
+		// this outputs null!
+
 //		var wien1 = EqualsShowCase.MixinImplementation.StreetAddress.NewObject (1010, "Wien", 
 //		"Stephansplatz", "1"); 
 //		 var wien2 = EqualsShowCase.MixinImplementation.StreetAddress.NewObject (1010, "Wien", 
